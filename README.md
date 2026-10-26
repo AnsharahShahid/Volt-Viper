@@ -3,6 +3,11 @@
 A glowing, arcade-style snake game written in pure Java (Swing) — no external libraries.
 Play solo or head-to-head, with synthesized sound effects, particle effects and power-ups.
 
+## ▶ Play online
+
+**[Play Volt Viper in your browser](https://ansharahshahid.github.io/Volt-Viper/)** — no install needed.
+(The browser version is `index.html`; the original Java desktop version is in `src/`.)
+
 ## Features
 
 - **1 or 2 players** on the same keyboard (last snake alive wins)
@@ -12,11 +17,13 @@ Play solo or head-to-head, with synthesized sound effects, particle effects and 
 - **Persistent high scores** per difficulty / wall mode
 - Neon glow graphics, particles, floating score text and generated sound (no audio files needed)
 
-## Requirements
+## Run the Java desktop version
+
+### Requirements
 
 - Java 17 or newer (JDK) — [download](https://adoptium.net/)
 
-## Run
+### Run
 
 ```bash
 # Linux / macOS
@@ -47,7 +54,8 @@ java -cp out VoltViper
 
 ```
 VoltViper/
-├── src/VoltViper.java   # the whole game
+├── index.html           # browser version (HTML5 canvas, plays on GitHub Pages)
+├── src/VoltViper.java   # Java desktop version
 ├── run.sh / run.bat     # build + launch scripts
 ├── LICENSE
 └── README.md
